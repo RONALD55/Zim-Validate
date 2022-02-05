@@ -10,14 +10,14 @@ zim-validate
 Features
 --------
 
--  This is package to assist developers to validate zimbabwean license number, vehicle registration numbers, mobile numbers from all major MNOs,Zim passports, national IDs among other things the project homepage. For further information on how to use the package.
+-  This is package to assist developers to validate zimbabwean driver's license numbers, vehicle registration numbers, mobile numbers for Telecel,Econet,Netone and any other valid zim number registered under the major MNOs,Zim passports, national IDs among other things. Visit the project homepage for further information on how to use the package.
 
 
 
 Installation
 ------------
 
-To can install the zim_validate open shell or terminal and run::
+To can install the zim_validate package open shell or terminal and run::
 
     pip install zim_validate
 
@@ -35,6 +35,7 @@ Note parameter `dashes`: (Optional) If you want to make dashes compulsory on the
 
     from zim_validate import national_id
     print(national_id("12-3456789-X-01",dashes=True))
+
 
 Validate Passport:
 
@@ -75,7 +76,7 @@ Pass the optional parameter `prefix` you want to make the prefix 263 mandatory
 .. code-block:: python
 
     from zim_validate import econet_number
-    print(econet_number("263715111111",prefix=True))
+    print(econet_number("263775111111",prefix=True))
 
 Validate Netone Numbers:
 
@@ -85,7 +86,7 @@ Pass the optional parameter `prefix` you want to make the prefix 263 mandatory
 .. code-block:: python
 
     from zim_validate import netone_number
-    print(netone_number("263775111111",prefix=True))
+    print(netone_number("263715111111",prefix=True))
 
 Validate Any Number from Telecel,Econet,Netone among other MNOs:
 
@@ -95,7 +96,7 @@ Pass the optional parameter `prefix` you want to make the prefix 263 mandatory
 .. code-block:: python
 
     from zim_validate import mobile_number
-    print(mobile_number("263735111111",prefix=True))
+    print(mobile_number("263782123345",prefix=True))
 
 Validate Drivers License:
 

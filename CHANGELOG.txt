@@ -4,3 +4,11 @@ Change Log
 0.0.1(04-February-2022)
 -------------------------
 - First Release of the Zim Validate Library that will assist developers validating Zim National Ids, Mobile numbers from all MNOs,Zim passports,Drivers licenses among other things
+
+0.0.2(05-February-2022)
+-------------------------
+-Fixing the documentation
+
+0.0.1(05-February-2022)
+-------------------------
+-Fixing the bug on the validation of mobile numbers

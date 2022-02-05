@@ -96,9 +96,9 @@ def telecel_number(value, prefix=True):
 
     is_valid = False
     if prefix:
-        pattern = re.compile(r"^26371[0-9]{7}$")
+        pattern = re.compile(r"^26373[0-9]{7}$")
     else:
-        pattern = re.compile(r"^071[0-9]{7}$")
+        pattern = re.compile(r"^073[0-9]{7}$")
     try:
         if re.fullmatch(pattern, value):
             is_valid = True
@@ -118,9 +118,9 @@ def netone_number(value, prefix=True):
 
     is_valid = False
     if prefix:
-        pattern = re.compile(r"^26373[0-9]{7}$")
+        pattern = re.compile(r"^26371[0-9]{7}$")
     else:
-        pattern = re.compile(r"^073[0-9]{7}$")
+        pattern = re.compile(r"^071[0-9]{7}$")
     try:
         if re.fullmatch(pattern, value):
             is_valid = True
@@ -140,9 +140,9 @@ def econet_number(value, prefix=True):
 
     is_valid = False
     if prefix:
-        pattern = re.compile(r"^26373[0-9]{7}$")
+        pattern = re.compile(r"^2637[7-8][0-9]{7}$")
     else:
-        pattern = re.compile(r"^073[0-9]{7}$")
+        pattern = re.compile(r"^07[7-8][0-9]{7}$")
     try:
         if re.fullmatch(pattern, value):
             is_valid = True
